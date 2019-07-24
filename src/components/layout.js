@@ -2,18 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import {useSpring, animated} from 'react-spring'
 
 import '../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {
-
+  const props = useSpring({opacity: 1, from: {opacity: 0}})
   let content;
 
   if (location && location.pathname === '/') {
     content = (
-      <div>
+      <animated.div style={props}>
         {children}
-      </div>
+      </animated.div>
     )
   } else {
     content = (
@@ -46,6 +47,7 @@ const Layout = ({ children, location }) => {
             ]}
           >
             <html lang="en" />
+            <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet"></link>
           </Helmet>
           {content}
         </>
