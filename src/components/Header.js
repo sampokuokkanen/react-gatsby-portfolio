@@ -14,8 +14,8 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Sampo Kuokkanen</h1>
-                <Typist cursor={{ show: false }}><p>Web dev in Japan. <br />Usually PHP, but love React.</p>
-                <p>(Also Rails sometimes)</p></Typist>
+                <Typist cursor={{ show: false }}><p>Web dev in Japan. <br />Usually PHP and Rails, but love React.</p>
+                </Typist>
             </div>
         </div>
     </header>

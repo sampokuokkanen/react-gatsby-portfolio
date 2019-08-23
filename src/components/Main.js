@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from '../images/sampo.jpg'
 
 class Main extends React.Component {
   render() {
@@ -62,21 +60,9 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Portfolio</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
           <p>
             My biggest work thus far has been the employee management system that is use at the company I work for right now. I did this with only
             PHP, JS, and CSS: thinking about it now, it would be so much easier to get everything to work in something like Laravel. But having to write all the SQL queries by hand has really helped me a lot later. 
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
           </p>
           {close}
         </article>
@@ -89,9 +75,6 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact me</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
           <form
             method="post"
             action="https://formspree.io/sampo.kuokkanen@gmail.com"
